@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "@acme/tsconfig/base.json"
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "checkJs": false,
+    "moduleSuffixes": [
+      ".ios",
+      ".android",
+      ".native",
+      ""
+    ],
+    "jsxImportSource": "nativewind"
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "nativewind-env.d.ts",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

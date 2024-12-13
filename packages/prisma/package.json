@@ -1,0 +1,32 @@
+{
+  "version": "0.0.0",
+  "name": "@packages/prisma",
+  "main": "index.ts",
+  "dependencies": {
+    "@prisma/client": "6.0.1",
+    "prisma": "catalog:",
+    "bcrypt": "catalog:"
+  },
+  "scripts": {
+    "db:migrate:reset": "prisma migrate reset",
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate",
+    "db:pull": "prisma db pull",
+    "db:push": "prisma db push",
+    "db:seed": "prisma db seed",
+    "lint": "eslint",
+    "check-types": "tsc --noEmit",
+    "clean": "git clean -xdf .cache .turbo node_modules"
+  },
+  "prisma": {
+    "seed": "tsx utils/seed.ts"
+  },
+  "devDependencies": {
+    "@acme/eslint-config": "workspace:*",
+    "@acme/prettier-config": "workspace:*",
+    "@acme/tailwind-config": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
+    "tsx": "4.19.2"
+  },
+  "prettier": "@acme/prettier-config"
+}

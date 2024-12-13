@@ -1,0 +1,28 @@
+{
+  "name": "t3-solito",
+  "private": true,
+  "engines": {
+    "node": ">=20.18.1",
+    "pnpm": "^9.14.2"
+  },
+  "packageManager": "pnpm@9.14.2",
+  "scripts": {
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo run clean",
+    "db:migrate": "turbo run db:migrate --filter=@packages/prisma",
+    "db:seed": "turbo run db:seed --filter=@packages/prisma",
+    "db:generate": "turbo run db:seed --filter=@packages/prisma",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint --continue -- --cache --cache-location .cache/.eslintcache",
+    "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location .cache/.eslintcache",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "@acme/prettier-config": "workspace:*",
+    "@turbo/gen": "^2.3.1",
+    "prettier": "catalog:",
+    "turbo": "^2.3.1",
+    "typescript": "catalog:"
+  },
+  "prettier": "@acme/prettier-config"
+}

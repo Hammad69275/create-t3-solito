@@ -1,0 +1,29 @@
+{
+  "version": "0.0.0",
+  "name": "@packages/ui",
+  "main": "index.ts",
+  "scripts": {
+    "lint": "eslint",
+    "check-types": "tsc --noEmit",
+    "clean": "git clean -xdf .cache .turbo node_modules"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "moti": "latest",
+    "nativewind": "~4.1.23",
+    "react-native": "~0.76.3",
+    "react-native-toast-message": "^2.2.1",
+    "react-toastify": "^10.0.6",
+    "solito": "latest",
+    "superjson": "2.2.1"
+  },
+  "devDependencies": {
+    "@acme/eslint-config": "workspace:*",
+    "@acme/prettier-config": "workspace:*",
+    "@acme/tailwind-config": "workspace:*",
+    "@acme/tsconfig": "workspace:*"
+  },
+  "prettier": "@acme/prettier-config"
+}

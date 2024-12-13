@@ -1,0 +1,10 @@
+{
+  "extends": ["@acme/tsconfig/base.json"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "checkJs": false,
+    "moduleSuffixes": [".ios", ".android", ".native", ""]
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx", "nativewind-env.d.ts", "**/*.js"]
+}
