@@ -5,7 +5,7 @@
   "dependencies": {
     "@prisma/client": "6.0.1",
     "prisma": "catalog:",
-    "bcrypt": "catalog:"
+    "bcryptjs": "catalog:"
   },
   "scripts": {
     "db:migrate:reset": "prisma migrate reset",

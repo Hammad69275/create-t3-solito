@@ -6,12 +6,13 @@
   "scripts": {
     "lint": "eslint",
     "dev": "tsx watch index.ts",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "build": "node build.mjs"
   },
   "dependencies": {
     "@packages/prisma": "workspace:*",
     "@trpc/server": "catalog:",
-    "bcrypt": "catalog:",
+    "bcryptjs": "catalog:",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
@@ -24,9 +25,13 @@
     "@acme/prettier-config": "workspace:*",
     "@acme/tailwind-config": "workspace:*",
     "@acme/tsconfig": "workspace:*",
+    "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/morgan": "^1.9.9",
     "dotenv": "^16.4.7",
+    "esbuild": "^0.24.0",
     "eslint": "catalog:",
     "nodemon": "^3.1.7",
     "prettier": "catalog:",

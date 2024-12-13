@@ -1,6 +1,6 @@
 import prisma from '@packages/prisma';
 import { TRPCError } from '@trpc/server';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { z } from 'zod';
 
