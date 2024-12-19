@@ -1,13 +1,13 @@
 import classNames from 'classnames';
-import React, { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
+import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-type Props = {
+interface Props {
   type: 'PRIMARY' | 'SECONDARY' | 'DANGEROUS' | 'TEXT';
-  children: React.ReactNode;
   onClick?: () => void;
   className?: string;
-};
+}
 
 export const Button: React.FC<PropsWithChildren<Props>> = ({
   type,

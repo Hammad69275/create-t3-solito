@@ -30,7 +30,7 @@ const RegisterScreen = () => {
       .catch(() => {});
   };
   return (
-    <View className="bg-secondary-900 flex h-screen flex-1 items-center justify-center">
+    <View className="flex h-screen flex-1 items-center justify-center bg-secondary-900">
       <Text className="mb-6 text-4xl font-bold text-white">Register</Text>
 
       <View className="w-4/5 max-w-md">

@@ -1,8 +1,8 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useState } from 'react';
 import { Text, View } from 'react-native';
 import { useRouter } from 'solito/router';
 
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Button } from '../../components/button';
 import { Input } from '../../components/input';
 import { useAuth } from '../../hooks/useAuth';
@@ -33,7 +33,7 @@ const LoginScreen = () => {
   };
 
   return (
-    <View className="bg-secondary-900 flex h-screen flex-1 items-center justify-center">
+    <View className="flex h-screen flex-1 items-center justify-center bg-secondary-900">
       <Text className="mb-6 text-4xl font-bold text-white">Login</Text>
       <View className="w-4/5 max-w-md">
         <Input value={email} onChangeText={setEmail} placeholder="email" />
