@@ -16,7 +16,7 @@ const Protected = (Component: React.FC) => {
     return !state.isLoading && state.isLoggedIn ? (
       <Component {...props} />
     ) : (
-      <View className="flex h-screen w-screen items-center justify-center bg-gray-900">
+      <View className="bg-secondary-900 flex h-screen w-screen items-center justify-center">
         <ActivityIndicator size="large" color="#3B82F6" />
       </View>
     );
